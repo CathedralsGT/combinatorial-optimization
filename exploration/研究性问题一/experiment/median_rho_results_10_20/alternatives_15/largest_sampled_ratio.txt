@@ -1,0 +1,15 @@
+alternatives: 15
+voters: 4
+base seed: 2026
+seed entropy: [2026, 15]
+ratio: 1.357692307692
+MedRank cost: 1412
+optimum cost: 1040
+Each row is a voter; columns are alternatives 1, ..., m.
+profile:
+4 9 8 10 14 6 2 15 11 5 3 12 13 7 1
+5 14 10 13 2 3 6 11 7 8 15 12 1 9 4
+15 11 1 13 7 8 5 10 14 9 12 2 3 4 6
+7 10 14 9 15 6 3 8 4 5 11 1 13 12 2
+MedRank rank vector: [4, 8, 7, 13, 15, 3, 2, 9, 10, 5, 11, 12, 14, 6, 1]
+optimal rank vector: [7, 13, 9, 15, 11, 3, 2, 14, 10, 4, 12, 5, 6, 8, 1]

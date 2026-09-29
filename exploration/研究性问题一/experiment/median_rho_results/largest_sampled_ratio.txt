@@ -1,0 +1,12 @@
+voters: 4
+ratio: 1.789473684211
+MedRank cost: 68
+optimum cost: 38
+Each row below is a voter; columns are alternatives 1, ..., m.
+profile:
+3 4 2 5 1
+5 1 2 3 4
+4 2 1 3 5
+4 5 2 3 1
+MedRank rank vector: [3, 4, 1, 2, 5]
+optimal rank vector: [5, 3, 1, 4, 2]
