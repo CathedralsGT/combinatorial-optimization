@@ -2,7 +2,7 @@
 
 下面利用平方距离的均值分解、中位数的配对估计以及诱导排列的最优性，证明 MedRank 法在 Spearman $`\rho`$ 距离下满足近似比上界 $`3+2\sqrt{2}`$。这里采用平方欧氏距离的定义，即 $`d_\rho(u,v)=\lVert u-v\rVert_2^2`$；所得结论是一个上界，并不意味着该上界一定能够达到。
 
-设 $`\Sigma=(\sigma^1,\ldots,\sigma^k)\in(S_n)^k`$ 为给定的输入排列，$`\sigma^\ell(i)`$ 表示对象 $`i`$ 在第 $`\ell`$ 个排列中的名次。记均值向量为 $`x=\frac1k\sum_{\ell=1}^k\sigma^\ell\in\mathbb R^n`$，逐坐标中位数向量为 $`h\in\mathbb R^n`$，MedRank 的输出为 $`\mu=\operatorname{ind}(h)\in S_n`$，即按 $`h`$ 的分量从小到大赋予名次，并在分量相同时任意打破平局。与本目录中的实验约定一致，偶数个输入时取上中位数；下面的证明事实上适用于中位数区间内的任意选择。
+设 $`\Sigma=(\sigma^1,\ldots,\sigma^k)\in(S_n)^k`$ 为给定的输入排列，$`\sigma^\ell(i)`$ 表示对象 $`i`$ 在第 $`\ell`$ 个排列中的名次。记均值向量为 $`x=\frac1k\sum_{\ell=1}^k\sigma^\ell\in\mathbb R^n`$，逐坐标中位数向量为 $`h\in\mathbb R^n`$，MedRank 的输出为 $`\mu=\mathrm{ind}(h)\in S_n`$，即按 $`h`$ 的分量从小到大赋予名次，并在分量相同时任意打破平局。与本目录中的实验约定一致，偶数个输入时取上中位数；下面的证明事实上适用于中位数区间内的任意选择。
 
 定义 $`D_\rho(\pi,\Sigma)=\sum_{\ell=1}^k\lVert\pi-\sigma^\ell\rVert_2^2`$，并取 $`\pi^*\in\arg\min_{\pi\in S_n}D_\rho(\pi,\Sigma)`$，记 $`\mathrm{OPT}_\rho=D_\rho(\pi^*,\Sigma)`$。我们要证明
 
